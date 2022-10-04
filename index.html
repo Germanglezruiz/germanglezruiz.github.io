@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hay Day</title>
+    <link rel="stylesheet" href="/One page APP/css y tipo/estilogde.css">
+    <link href="Lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Start WOWSlider.com HEAD section -->
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <!-- End WOWSlider.com HEAD section -->
+    <link  rel="icon"   href="https://hayday.com/favicon/favicon-32x32.png" type="image/png" />
+    <link rel="stylesheet" href="css y tipo/modo-oscuro.css"/>
+    <link rel="stylesheet" href="css y tipo/peque.css" media="(max-width:768px)"/>
+
+
+</head>
+<body>
+    <header>
+        <img src="/One page APP/Recursos/logosupercell.png" alt="logo supercell" class="supercell" >
+        <a onclick="darkmode()" href="#"><img src="recursos/iconoOFF.png" class="OFF"></a>
+        <a onclick="darkmode()" href="#"><img src="recursos/iconoON.png" class="on"></a>
+        <a onclick="darkmode()" href="#"><img src="recursos/perro-despierto.png" class="awake"></a>
+        <a onclick="darkmode()" href="#"><img src="recursos/perro-durmiendo.png" class="sleep"></a>
+        <video id="vid-presentacion" autoplay loop muted >
+            <source src="/One page APP/Recursos/hayday.mp4" type="video/mp4">
+        </video>
+        <div class="centrar-logo"><img src="/One page APP/Recursos/pngkey.com-hay-png-572947.png" alt="logo hayday" class="logo-hayday" data-aos="fade-zoom-in" data-aos-delay="1100"></div>
+        
+    </header>
+    <div id="widthentero">
+    <div class="centrar-menu">
+        <nav id="menu-prin">
+            <a href="#infoancla" class="hayday"><img src="./Recursos/icono-info.webp" alt=""><br>HayDay</a>
+            <a href="#sliderancla" class="imagenes"><img src="./Recursos/icono-imgs.webp" alt=""><br>Galería</a>
+            <a href="#descargaancla" class="download"><img src="./Recursos/icono-descarga.webp" alt="">Descargar</a>
+        </nav>
+        <nav id="menu-mov">
+            <a onclick="menudespliegue()" href="#"><img src="Recursos/menu.png"></a>
+            <a onclick="menudespliegue()" href="#infoancla">HayDay</a>
+            <a onclick="menudespliegue()" href="#sliderancla">Galería</a>
+            <a onclick="menudespliegue()" href="#descargaancla">Descargar</a>
+
+        </nav>
+    </div>
+    </div>
+    <main>
+        <section id="info">
+            <div class="sec1-col1" data-aos="fade-right" data-aos-delay="800" id="infoancla">
+                <img src="recursos/nubes.png" alt="" class="nubes">
+                <img src="recursos/sol.png" alt="" class="sol">
+                <img src="recursos/luna.png" alt="" class="luna">
+                <div class="ltbx">
+                    <a href="Lightbox/images/screenshots1.webp" data-lightbox="imagenes"><img src="Lightbox/images/screenshots1.webp" alt=""></a>
+                    <a href="Lightbox/images/screenshots2.webp" data-lightbox="imagenes"><img src="Lightbox/images/screenshots2.webp" alt=""></a>
+                    <a href="Lightbox/images/screenshots3.webp" data-lightbox="imagenes"><img src="Lightbox/images/screenshots3.webp" alt=""></a>
+                    <a href="Lightbox/images/screenshots4.webp" data-lightbox="imagenes"><img src="Lightbox/images/screenshots4.webp" alt=""></a>
+                    <a href="Lightbox/images/screenshots5.webp" data-lightbox="imagenes"><img src="Lightbox/images/screenshots5.webp" alt=""></a>
+                    <img src="Recursos/gallo-cabeza-gacha.webp" alt="" class="gallina1">
+                </div>
+            </div>
+            <div class="sec1-col2">
+                <img src="Recursos/postit.png" alt="" class="postit">
+                
+            </div>
+
+        </section>
+        <section id="slider">
+            <div class="madera-sup" id="sliderancla"></div>
+            <img src="recursos/arbol-leñador.png" class="arbol">
+            <div class="slider">
+                <!-- Start WOWSlider.com BODY section -->
+                <div id="wowslider-container1">
+                    <div class="ws_images"><ul>
+                            <li><img src="data1/images/apaisado1.jpg" alt="apaisado1" title="apaisado1" id="wows1_0"/></li>
+                            <li><img src="data1/images/apaisado2.jpg" alt="apaisado2" title="apaisado2" id="wows1_1"/></li>
+                            <li><img src="data1/images/apaisado3.jpg" alt="apaisado3" title="apaisado3" id="wows1_2"/></li>
+                            <li><a href="http://wowslider.net"><img src="data1/images/apaisado4.jpg" alt="bootstrap slider" title="apaisado4" id="wows1_3"/></a></li>
+                            <li><img src="data1/images/apaisado5.jpg" alt="apaisado5" title="apaisado5" id="wows1_4"/></li>
+                        </ul></div>
+                    <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net"></a></div>
+                    <div class="ws_shadow"></div>
+                    </div>	
+                    <script type="text/javascript" src="engine1/wowslider.js"></script>
+                    <script type="text/javascript" src="engine1/script.js"></script>
+                    <!-- End WOWSlider.com BODY section -->
+                    <div class="gente" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom">
+                        <img src="recursos/hombre1.png">
+                        <img src="recursos/mujer1.png">
+                        <img src="recursos/hombre2.png">
+                        <img src="recursos/mujer2.png">
+                    </div>
+            </div>
+            <div class="madera-inf"></div>
+        </section> 
+        <section id="descargas">
+            <div id="descargaancla"></div>
+            <div class="sec3-col" data-aos="zoom-out-right" data-aos-duration="1500">
+                <h1>¡Descargalo ahora! <br> Tu granja te espera</h1>
+                <div class="plataformas">
+                    <a href="https://play.google.com/store/search?q=hayday&c=apps&gl=ES" target="_blank"><img src="recursos/app-store.png"></a>
+                    <a href="https://apps.apple.com/es/app/hay-day/id506627515" target="_blank"><img src="recursos/goole-play.png"></a>
+                </div>
+            </div>
+        </section>
+        <footer class="pie">
+            <div class="madera-sup"></div>
+            <img src="recursos/gallina-peces.png" class="gallina-peces" alt="" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>Síguenos en las redes sociales!</h1>
+            <h3 class="nov">Estarás al día de todas las novedades de Hay Day</h3>
+            <div class="redes-sociales">
+                <a target="_blank" href="https://twitter.com/hayday?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="" alt=""><img src="recursos/twi.png"></a>
+                <a target="_blank" href="https://www.facebook.com/HayDayOfficial/"><img src="" alt=""><img src="recursos/fb.png"></a>
+                <a target="_blank" href="https://www.instagram.com/hayday/?hl=en"><img src="" alt=""><img src="recursos/ig.png"></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCBrMq7wkdPWb3PxR-GUR61A"><img src="" alt=""><img src="recursos/yb.png"></a>
+            </div>
+            <div class="final-pie">
+                <div class="centrarpie">
+                    <img src="recursos/logosupercell.png" class="supercell2">
+                    <div class="plataformas2">
+                        <a href="https://play.google.com/store/search?q=hayday&c=apps&gl=ES" target="_blank"><img src="recursos/app-store.png"></a>
+                        <a href="https://apps.apple.com/es/app/hay-day/id506627515" target="_blank"><img src="recursos/goole-play.png"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="Lightbox/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+
+            var $target = $(this.hash);
+            var positionTarget = $target.offset().top;
+
+            $('html, body').animate({ scrollTop: positionTarget }, 1000);
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({once: true});
+      </script>
+      <script>
+          function darkmode(){
+              document.querySelector('.OFF').classList.toggle('modoscuro2');
+              document.querySelector('.awake').classList.toggle('modoscuro2');
+              document.querySelector('.on').classList.toggle('modoscuro1');
+              document.querySelector('.sleep').classList.toggle('modoscuro1');
+              document.querySelector('.sol').classList.toggle('modoscuro2');
+              document.querySelector('.luna').classList.toggle('modoscuro1');
+              document.querySelector('body').classList.toggle('bodyoscuro');
+              document.querySelector('.supercell').classList.toggle('supercellinv');
+              document.querySelector('#widthentero').classList.toggle('menuoscuro');
+              document.querySelector('.nov').classList.toggle('novosc');
+            }
+            </script>
+      <script>
+          function menudespliegue(){
+              document.querySelector('#menu-mov').classList.toggle('despliegue');
+              
+          }
+      </script>
+</body>
+</html>
