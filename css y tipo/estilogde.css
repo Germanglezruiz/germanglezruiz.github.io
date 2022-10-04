@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Super-Cell';
+    src: url(supercell-magic.woff);
+}
+ body{
+     background: linear-gradient(180deg, rgba(254,250,189,1) 0%, rgba(254,250,189,1) 31%, rgba(233,155,1,1) 100%);
+     margin: 0;
+     transition: 1s;
+ }
+ /* Parte inicial */
+ header{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+
+  
+ }
+ #vid-presentacion{
+    width:100%;
+    height: 85vh;
+    object-fit: cover;
+    object-position: top;
+    border-bottom-left-radius:25% ;
+    border-bottom-right-radius:25% ;
+    z-index: 1;
+ }
+ .centrar-logo{
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 10;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 85vh;
+ }
+ .logo-hayday{
+     width: 20vw;
+     padding-bottom:25%;
+ }
+ .supercell{
+     position: absolute;
+     top: 5px;
+     left: 5px;
+     width: 2.5%;
+     z-index: 10;
+     transition: 1s;
+ }
+ #widthentero{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: sticky;
+     top: 0;
+     background: rgba(254, 250, 189, 0.291) ;
+     border-bottom: rgba(128, 128, 128, 0.298);
+     z-index: 200;
+ }
+ #menu-mov{
+     display: none;
+ }
+ .centrar-menu{
+     width: 80%;
+     display: flex;
+     justify-content: center;
+     z-index: 200;
+    
+ }
+ #menu-prin{
+     width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 200;
+}
+#menu-prin a{
+     z-index: 200;
+     width: 15vw;
+     max-width: 15vw;
+     text-decoration: none;
+     font-family: 'Super-Cell';
+     color: white;
+     text-shadow: #122D62 -1px 2px 2px;
+     font-size: 1.5em;
+     transition: 0.5s;
+     text-align: center;
+     opacity: 0;
+     animation-name: aparicion1;
+     animation-duration: 1s;
+     animation-fill-mode: forwards;
+     animation-delay: 1s;
+ }
+ #menu-prin img{
+     width: 15%;
+ }
+ @keyframes aparicion1{
+     0%{
+         opacity: 0;
+     }
+     100%{
+         opacity: 1;
+     }
+ }
+ #menu-prin a:hover{
+    color: rgb(225, 225, 225);
+    font-size: 1.7em;
+ }
+
+ /* Seccion info */
+#info{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.sec1-col1{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-left:2% ;
+    justify-content: center;
+    animation-name: deslizardcha;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+    z-index: 100;
+    position: relative;
+    overflow: hidden;
+}   
+.nubes{
+    width: 60%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    z-index: -1;
+    animation: animacion1 10s infinite linear;
+    position: relative;
+}
+/* animación nubes */
+@keyframes animacion1 {
+    from {left:-80%}
+    to{left: 880px;}
+}
+
+.ltbx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+
+}
+.ltbx img{
+    width: 90%;
+    border: 3px white solid;
+}
+.gallina1{
+    border: none!important;
+    position: absolute !important;
+    bottom: -10%;
+    right: 0%;
+    width: 10% !important;
+
+}
+
+.sec1-col2{
+    width: 35%;
+    padding-right: 2%;
+    padding-left: 2%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.postit{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    z-index: -1;
+}
+.textoinfo{
+    z-index: 10;
+    padding-left: 16%;
+    padding-right: 1%;
+    padding-bottom: 10%;
+}
+.textoinfo p, .textoinfo h1{
+    z-index: 10;
+    font-family: 'Super-cell';
+}
+.textoinfo p{
+    font-size: 12px;
+
+}
+.textoinfo h1{
+font-size: 17px;
+}
+
+/* Seccion slider */
+
+#slider{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.arbol{
+    position: absolute;
+    left: 0;
+    width: 30%;
+    bottom: 8%;
+}
+.madera-sup{
+    width: 100%;
+    height: 15vh;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    background-image: url(../Recursos/textura-madera.jpeg);
+    background-size: cover;
+    background-position: LEFT;
+
+}
+.madera-inf{
+    width: 100%;
+    height: 15vh;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    background-image: url(../Recursos/textura-madera.jpeg);
+    background-size: cover;
+    background-position: LEFT;
+
+}
+.slider{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 70vh;
+}
+#wowslider-container1{
+    width: 65%!important;
+    margin-top: 3% !important;
+    margin-bottom: 3% !important;
+    background-color: transparent!important;
+    margin: auto !important;
+    top: 0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.gente{
+    width: 40%;
+
+    z-index: 10;
+    margin-bottom: -2%;
+    transform: rotate(-1deg);
+}
+.gente img{
+    width: 20%;
+}
+
+/* Sección descarga */
+
+#descargas{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Recursos/imagen-fondo.jpeg);
+    background-size: cover;
+    background-position:  right;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%;
+}
+.sec3-col{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    border: 5px solid white;
+    background-color: #F2C361;
+    box-shadow: #122D62 -3px 2px 2px;
+    border-radius: 50px;
+}
+.sec3-col h1{
+    text-align: center;
+    font-family: 'Super-Cell';
+    color: white;
+    text-shadow: #122D62 -3px 2px 2px;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.plataformas{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    justify-content: center ;
+    align-items: center;
+}
+.plataformas a{
+    text-align: center;
+}
+.plataformas img{
+    width: 90%;
+    transition: .5s;
+}
+.plataformas img:hover{
+    transform: scale(90%);
+}
+
+/* Seccion pie */
+.pie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.gallina-peces{
+    width: 50%;
+    text-align: center;
+    padding-top: 3%;
+}
+.pie h1{
+    font-family: 'Super-Cell';
+    color: white;
+    text-shadow: #122D62 -4px 2px 2px;
+    margin-bottom: 0;
+    font-size: 45px;
+    text-transform: capitalize;
+}
+.pie h3{
+    font-family: 'Super-Cell';
+    color: #122D62;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.redes-sociales{
+    width: 50%;
+    padding: 1%;
+    padding-bottom: 5%;
+}
+.redes-sociales img{
+    width: 6%;
+    padding: 1%;
+}
+.redes-sociales img:hover{
+    filter: brightness(100);
+}
+.final-pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    height: 15vh;
+}
+.centrarpie{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+}
+.supercell2{
+    width: 5%;
+    filter: invert(1);
+    margin-left: 5%;
+}
+.plataformas2{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.plataformas2 img{
+    width: 100%;
+}

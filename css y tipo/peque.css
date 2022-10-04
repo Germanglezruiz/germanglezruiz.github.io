@@ -1,0 +1,41 @@
+
+#menu-mov{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 45px;
+    width: 100%;
+    overflow: hidden;
+    animation-name: aparicion1;
+     animation-duration: 1s;
+     animation-fill-mode: forwards;
+     animation-delay: 1s;
+    opacity: 0;
+    transition: .5s;
+ }
+ @keyframes aparicion1{
+     0%{
+         opacity: 0;
+     }
+     100%{
+         opacity: 1;
+     }
+ }
+
+#menu-mov a{
+    height: 45px;
+    font-family: 'Super-cell';
+    text-decoration: none;
+    color: black;
+    margin: 2%;
+}
+#menu-mov a:first-child{
+    margin: 0;
+}
+
+#menu-prin{
+    display: none;
+}
+.despliegue{
+    height: 180px !important;
+}
